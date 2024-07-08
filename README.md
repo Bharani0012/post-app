@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Wylo Responsive Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a responsive web application developed using ReactJS. It allows users to create and edit posts with image uploads using the imgbb API. The application uses Redux for state management and includes theme toggling functionality.
 
-## Available Scripts
+## Setup and Installation
 
-In the project directory, you can run:
+1. Ensure you have Node.js installed.
+2. Clone the repository:
+   
+        git clone https://github.com/Bharani0012/post-app
 
-### `npm start`
+Navigate to the project directory:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    cd wylo-responsive-web-app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install dependencies:
 
-### `npm test`
+    npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start the development server:
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Components
+PostItem Component
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This component handles the display of each post on the screen. It includes an option to edit the post.
+PostsDisplay Component
 
-### `npm run eject`
+This is the main component that displays all the posts. It retrieves and shows a list of post items.
+CreatePost Component
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This component includes a form for creating new posts. It handles input fields for post details such as title and content.
+State Management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application uses Redux for state management. There are two slices:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Post Slice: Manages the posts' data across the application.
+    Theme Slice: Manages the theme toggling functionality.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Form Handling
 
-## Learn More
+    Form inputs are validated before allowing users to submit.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+API Interaction
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    fetch is used to interact with the imgbb API for image uploads.
+    API responses are handled and the state is updated accordingly.
 
-### Code Splitting
+Editing Posts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The logic for editing a post includes showing the current post's data in the form and saving the changes.
+Deployment
 
-### Analyzing the Bundle Size
+The application can be deployed using platforms like Heroku or Netlify. Ensure the backend API (if any) is accessible to the frontend.
+Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    ReactJS
+    Redux
+    react-icons
+    Bootstrap
+    imgbb API
