@@ -1,0 +1,11 @@
+.theme-button{
+    all: unset;
+    padding: 5px;
+    text-align: center;
+}
+.sun-icon{
+    color: gold;
+}
+.moon-icon{
+    color: black;
+}

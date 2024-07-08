@@ -1,0 +1,21 @@
+.create-post{
+    width: 100%;
+}
+.create-post-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    width: 200px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+.content-input{
+    height: 150px;
+}
+.label{
+    font-size: 20px;
+}

@@ -1,0 +1,28 @@
+.post-item{
+    background-color: antiquewhite !important;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+.post-item-light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+.post-item-dark-mode {
+    background-color: #4f4c4c !important;
+    color: #000;
+}
+.button{
+    margin-right: 5px;
+}
+.image{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:300px) {
+    .image{
+        width: 100px;
+    }
+}
