@@ -31,7 +31,7 @@ const ImageUpload = ({ onImageUpload }) => {
 
     return (
         <div className="m-2 file-container">
-            <input type="file" onChange={handleImageChange} />
+            <input type="file" onChange={handleImageChange} required/>
             {uploading && <p>Uploading...</p>}
         </div>
     );
