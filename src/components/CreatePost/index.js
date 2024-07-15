@@ -17,7 +17,7 @@ const CreatePost = () => {
         if (editingPost) {
             setTitle(editingPost.title);
             setContent(editingPost.content);
-            setImageUrl(editingPost.imageUrl || '');
+            setImageUrl(editingPost.imageUrl || 'https://www.shutterstock.com/image-illustration/no-picture-available-placeholder-thumbnail-260nw-2179364083.jpg');
         }
     }, [editingPost]);
 
